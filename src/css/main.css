@@ -1,0 +1,125 @@
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #212726;
+  color: #cfcfcf;
+  font-family: Verdana, sans-serif;
+}
+main{
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+h1, 
+h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+a{
+  text-decoration: none;
+  color: #cfcfcf;
+}
+.container-alphabet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.alphabet,
+.breedItem{
+  border-radius: 10px;
+  background: #2c3130;
+  margin: .5rem;
+  text-align: center;
+}
+.breedItem{
+  margin: 1rem;
+}
+.alphabet:hover,
+.breedItem:hover{
+  box-shadow: 0px 1px 10px 0px #4e4e4e;
+}
+.alphabet a,
+.breedItem a{
+  padding: 1.2rem 1.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+}
+.breedItem a{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.container-selected-breed{
+  text-align: center;
+}
+.image-breed-selected{
+  height: 70vh;
+}
+.image-breed-selected img{
+  object-fit: contain;
+  width: 50%;
+  height: 100%;
+}
+.breeds-list{
+  width: 100%;
+  height: 75vh;
+  overflow: auto;
+}
+.exit{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: .5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 500ms;
+}
+.exit:hover{
+  background: #2d2d2d;
+  box-shadow: -20px 20px 180px 90px #313131;
+  color: #ffffff;
+}
+.container-breeds--filters,
+.container-selected-breed{
+  display: none;
+}
+.modal{
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212726;
+  padding: 0 5%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #d3d3d3; 
+}
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #424242; 
+}
+@media screen and (max-width : 560px){
+  .image-breed-selected img{
+    width: 80%;
+  }
+  .breedItem{
+    margin: .5rem;
+  }
+}
